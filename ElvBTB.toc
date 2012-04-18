@@ -1,0 +1,8 @@
+## Interface: 40300
+## Author: Rafael Gaspar
+## Version: 0.0.1
+## Title: |cff1784d1ElvUI |rBetter Totem Bar
+## Notes: A replacement Totem Bar for ElvUI inspired by FloTotemBar.
+## SavedVariables: ElvBTBData
+## RequiredDeps: ElvUI
+
