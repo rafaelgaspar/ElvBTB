@@ -1,0 +1,45 @@
+ElvUI Better Totem Bar
+======================
+
+The idea is to develop a Totem Bar replacement for ElvUI inspired by FloTotemBar.
+
+It is still in a very early development stage, and a stable version will probably not see the light of the day in Azeroth before Mists of Pandaria release.
+
+Long-term Road Map
+------------------
+
+* Version 0.1.0 - First usable version - Estimated release: Very soon
+* Version 1.0.0 - First stable version - Estimated release: Around Mists of Pandaria release
+* Version 2.0.0 - Remove ElvUI as required dependency - Estimated release: Soon™
+
+Short-term Road Map
+-------------------
+
+### Version 0.0.1
+
+* Class detection
+* Spells detection
+* Respec detection
+
+### Version 0.0.2
+
+* All 4 bars (Air, Earth, Fire, and Water) showing
+* Positioning still hardcoded
+
+### Version 0.0.3
+
+* Positioning via ElvUI
+
+### Version 0.0.4
+
+* Call of the Elements interface at ElvUI configuration window
+
+### Version 0.0.5
+
+* Profiles support via ElvUI
+
+### Version 0.9.1
+
+* Mists of Pandaria Changes
+* New Totem Spells
+* Removal of Call of the Elements interface
