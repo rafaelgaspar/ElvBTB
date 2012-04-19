@@ -1,0 +1,14 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+  <Script file='ElvBTBTotem.lua' />
+  <Script file='ElvBTB.lua' />
+  <Frame name="ElvBTB">
+    <Scripts>
+      <OnLoad>
+        ElvBTB_OnLoad(self);
+      </OnLoad>
+      <OnEvent>
+        ElvBTB_OnEvent(self, event, ...);
+      </OnEvent>
+    </Scripts>
+  </Frame>
+</Ui>

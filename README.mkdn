@@ -15,7 +15,7 @@ Long-term Road Map
 Short-term Road Map
 -------------------
 
-### Version 0.0.1
+### Version 0.0.1 - Done
 
 * Class detection
 * Spells detection
