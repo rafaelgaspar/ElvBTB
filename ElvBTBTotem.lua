@@ -40,6 +40,13 @@ ElvBTBTotem.TOTEM_COLORS = {
   {.42,.18,.74},  -- Air Totems
 }
 
+ElvBTBTotem.TOTEM_SCHOOL_NAMES = {
+  "Fire",   -- Fire Totems
+  "Earth",  -- Earth Totems
+  "Water",  -- Water Totems
+  "Air"     -- Air Totems
+}
+
 function ElvBTBTotem:validTotems()  -- Returns the current valid list of Totems
   local toReturn = {
     {},  -- Valid Fire Totems

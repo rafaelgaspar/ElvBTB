@@ -4,14 +4,16 @@ if myClassName ~= "SHAMAN" then return end
 local LibActionButton = LibStub("LibActionButton-1.0")
 
 local ElvBTBTotem = nil
-local ElvBTBTotemBarCountdown = nil
 local ElvBTBTotemBarButtons = nil
+local ElvBTBTotemBarCountdown = nil
+local ElvBTBTotemBarMovers = nil
 local ElvBTBTotemBars = {}
 
 function ElvBTBTotemBars:createBars()
   ElvBTBTotem = _G["ElvBTBTotem"]
   ElvBTBTotemBarButtons = _G["ElvBTBTotemBarButtons"]
-
+  ElvBTBTotemBarCountdown = _G["ElvBTBTotemBarCountdown"]
+  ElvBTBTotemBarMovers = _G["ElvBTBTotemBarMovers"]
   
   ElvBTBTotemBars.validTotems = ElvBTBTotem:validTotems()
   local numOfTotemsType = table.getn(ElvBTBTotemBars.validTotems)
@@ -48,6 +50,7 @@ function ElvBTBTotemBars:createBar(totemType, x, y)
   
   bar.buttons = ElvBTBTotemBarButtons:createButtons(bar)
   bar.countdown = ElvBTBTotemBarCountdowns:createCountdown(bar)
+  bar.mover = ElvBTBTotemBarMovers:createMover(bar)
   
   return bar
 end

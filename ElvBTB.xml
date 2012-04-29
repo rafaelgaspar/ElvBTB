@@ -3,6 +3,7 @@
   <Script file='ElvBTBTotemBars.lua' />
   <Script file='ElvBTBTotemBarButtons.lua' />
   <Script file='ElvBTBTotemBarCountdowns.lua' />
+  <Script file='ElvBTBTotemBarMovers.lua' />
   
   <Script file='ElvBTB.lua' />
   <Frame name="ElvBTB">

@@ -26,20 +26,30 @@ Short-term Road Map
 * All 4 bars (Air, Earth, Fire, and Water) showing
 * Positioning still hardcoded
 
-### Version 0.0.3
+### Version 0.0.3 - Done
 
 * Positioning via ElvUI
 
 ### Version 0.0.4
 
+* Backdrop and Button size configuration at ElvUI configuration window
 * Call of the Elements interface at ElvUI configuration window
 
 ### Version 0.0.5
 
-* Profiles support via ElvUI
+* Profiles support via ElvUI (Done by default by the movers, maybe?)
+
+### Version 0.0.6
+
+* Make frames pixel perfect when UI scale is set to diferent values (Mac only, maybe?)
 
 ### Version 0.9.1
 
 * Mists of Pandaria Changes
 * New Totem Spells
 * Removal of Call of the Elements interface
+
+Known Bugs
+----------
+
+* Sometimes an ElvUI function, called by us, call an in-combat protected function during combat
