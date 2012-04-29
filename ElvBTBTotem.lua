@@ -33,6 +33,13 @@ ElvBTBTotem.TOTEM_SPELL_IDS = {
   }   -- Air Totems
 }
 
+ElvBTBTotem.TOTEM_COLORS = {
+  {.58,.23,.10},  -- Fire Totems
+  {.23,.45,.13},  -- Earth Totems
+  {.19,.48,.60},  -- Water Totems
+  {.42,.18,.74},  -- Air Totems
+}
+
 function ElvBTBTotem:validTotems()  -- Returns the current valid list of Totems
   local toReturn = {
     {},  -- Valid Fire Totems

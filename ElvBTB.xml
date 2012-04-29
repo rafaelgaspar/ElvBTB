@@ -1,5 +1,9 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/">
-  <Script file='ElvBTBTotem.lua' />
+  <Script file='ElvBTBTotem.lua' />  
+  <Script file='ElvBTBTotemBars.lua' />
+  <Script file='ElvBTBTotemBarButtons.lua' />
+  <Script file='ElvBTBTotemBarCountdowns.lua' />
+  
   <Script file='ElvBTB.lua' />
   <Frame name="ElvBTB">
     <Scripts>
@@ -9,6 +13,9 @@
       <OnEvent>
         ElvBTB_OnEvent(self, event, ...);
       </OnEvent>
+      <OnUpdate>
+        ElvBTB_OnUpdate(self);
+      </OnUpdate>
     </Scripts>
   </Frame>
 </Ui>

@@ -21,7 +21,7 @@ Short-term Road Map
 * Spells detection
 * Respec detection
 
-### Version 0.0.2
+### Version 0.0.2 - Done
 
 * All 4 bars (Air, Earth, Fire, and Water) showing
 * Positioning still hardcoded
