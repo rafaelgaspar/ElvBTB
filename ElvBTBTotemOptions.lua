@@ -59,59 +59,7 @@ function ElvBTBTotemOptions:createOptions()
         name = L['Countdown Width'],
         desc = L['The width of the countdown bar.'],
         min = 1, max = 15, step = 1
-      },
-      -- From here till I tell, is the part the needs to be removed for MoP version
-      elements = {
-        order = 7,
-        type = 'group',
-        name = "Call of the Elements",
-        guiInline = true,
-        get = function(info) return "foo" end,
-        set = function(info, value) end,
-        args = {
-          fire = {
-            order = 1,
-            type = "select",
-            name = "Fire Totem",
-            values = {
-              ["2894"] = "Fire Elemental Totem",
-              ["3599"] = "Searing Totem",
-              ["8190"] = "Magma Totem",
-              ["8227"] = "Flametongue Totem"
-            }
-          },
-          earth = {
-            order = 2,
-            type = "select",
-            name = "Earth Totem",
-            values = {
-              ["2062"] = "Earth Elemental Totem",
-              ["2484"] = "Earthbind Totem",
-              ["5730"] = "Stoneclaw Totem",
-              ["8071"] = "Stoneskin Totem",
-              ["8075"] = "Strength of Earth Totem",
-              ["8143"] = "Tremor Totem"
-            }
-          },
-          water = {
-            order = 3,
-            type = "select",
-            name = "Water Totem",
-            values = {
-              ["2062"] = "Earth Elemental Totem"
-            }
-          },
-          air = {
-            order = 4,
-            type = "select",
-            name = "Air Totem",
-            values = {
-              ["2062"] = "Earth Elemental Totem",
-            }
-          },
-        }
       }
-      -- Here, stop removing
     }
   }
 end
