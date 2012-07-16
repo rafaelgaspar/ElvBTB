@@ -5,31 +5,28 @@ local ElvBTBTotem = {}
 
 ElvBTBTotem.TOTEM_SPELL_IDS = {
   {
-    2894,  -- Fire Elemental Totem
-    3599,  -- Searing Totem
-    8190,  -- Magma Totem
-    8227   -- Flametongue Totem
+    2894,    -- Fire Elemental Totem
+    3599,    -- Searing Totem
+    8190     -- Magma Totem
   },  -- Fire Totems
   {
-    2062,  -- Earth Elemental Totem
-    2484,  -- Earthbind Totem
-    5730,  -- Stoneclaw Totem
-    8071,  -- Stoneskin Totem
-    8075,  -- Strength of Earth Totem
-    8143   -- Tremor Totem
+    2062,    -- Earth Elemental Totem
+    2484,    -- Earthbind Totem
+    8143,    -- Tremor Totem
+    51485,   -- Earthgrab Totem
+    108270   -- Stone Bulwark Totem
   },  -- Earth Totems
   {
-    5394,  -- Healing Stream Totem
-    5675,  -- Mana Spring Totem
-    8184,  -- Elemental Resistance Totem
-    16190, -- Mana Tide Totem
-    87718  -- Totem of Tranquil Mind
+    5394,    -- Healing Stream Totem
+    108280,  -- Healing Tide Totem
+    16190    -- Mana Tide Totem
   },  -- Water Totems
   {
-    3738,  -- Wrath of Air Totem
-    8177,  -- Grounding Totem
-    8512,  -- Windfury Totem
-    98008  -- Spirit Link Totem
+    108269,  -- Capacitor Totem
+    8177,    -- Grounding Totem
+    120668,  -- Stormlash Totem
+    108273,  -- Windwalk Totem
+    98008    -- Spirit Link Totem
   }   -- Air Totems
 }
 
@@ -37,7 +34,7 @@ ElvBTBTotem.TOTEM_COLORS = {
   {.58,.23,.10},  -- Fire Totems
   {.23,.45,.13},  -- Earth Totems
   {.19,.48,.60},  -- Water Totems
-  {.42,.18,.74},  -- Air Totems
+  {.42,.18,.74}   -- Air Totems
 }
 
 ElvBTBTotem.TOTEM_SCHOOL_NAMES = {
