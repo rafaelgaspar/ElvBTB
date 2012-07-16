@@ -2,7 +2,7 @@ _, myClassName = UnitClass("player")
 if myClassName ~= "SHAMAN" then return end
 
 local LibActionButton = LibStub("LibActionButton-1.0")
-local E, L, DF, G = unpack(ElvUI); --Inport: Engine, Locales, ProfileDB, GlobalDB
+local E, L, V, DF, G = unpack(ElvUI); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 
 local ElvBTBTotem = nil
 local ElvBTBTotemBarButtons = nil
