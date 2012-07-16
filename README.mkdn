@@ -8,7 +8,6 @@ It is still in a very early development stage, and a stable version will probabl
 Long-term Road Map
 ------------------
 
-* Version 0.1.0 - First usable version - Estimated release: Very soon
 * Version 1.0.0 - First stable version - Estimated release: Around Mists of Pandaria release
 * Version 2.0.0 - Remove ElvUI as required dependency - Estimated release: Soon™
 
@@ -30,18 +29,14 @@ Short-term Road Map
 
 * Positioning via ElvUI
 
-### Version 0.0.4
+### Version 0.0.4 - Done
 
 * Backdrop and Button size configuration at ElvUI configuration window
-* Call of the Elements interface at ElvUI configuration window
+* Call of the Elements interface at ElvUI configuration window (Not functional, and probably never will be, since I'm starting to work on the MoP version already)
 
 ### Version 0.0.5
 
-* Profiles support via ElvUI (Done by default by the movers, maybe?)
-
-### Version 0.0.6
-
-* Make frames pixel perfect when UI scale is set to diferent values (Mac only, maybe?)
+* Make frames pixel perfect when UI scale is set to different values
 
 ### Version 0.9.1
 
