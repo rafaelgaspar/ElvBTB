@@ -16,6 +16,7 @@ end
 
 function ElvBTBTotemBarButtons:createButton(bar, spellId, position)
   button = LibActionButton:CreateButton(10*bar.totemType+position, format(bar:GetName().."Button%d", position), bar)
+  button.bar = bar
   
   button:Size(bar.buttonSize)
   button:Point("BOTTOMLEFT", (position-1)*(bar.buttonSize+5)+2+bar.countdownWidth+8, 2)
@@ -34,13 +35,18 @@ function ElvBTBTotemBarButtons:createButton(bar, spellId, position)
   return button
 end
 
-function ElvBTBTotemBarButtons:updateButtons(bar, buttons)
+function ElvBTBTotemBarButtons:updateButtons(bar, buttons, optionsChanged)
   for i=1,7 do
-    ElvBTBTotemBarButtons:updateButton(buttons[i], bar.spellIds[i])
+    ElvBTBTotemBarButtons:updateButton(buttons[i], bar.spellIds[i], i, optionsChanged)
   end
 end
 
-function ElvBTBTotemBarButtons:updateButton(button, spellId)
+function ElvBTBTotemBarButtons:updateButton(button, spellId, position, optionsChanged)
+  if optionsChanged then
+    button:Size(button.bar.buttonSize)
+    button:Point("BOTTOMLEFT", (position-1)*(button.bar.buttonSize+5)+2+button.bar.countdownWidth+8, 2)
+  end
+
   if spellId then
     button:SetState(0, "spell", spellId)
     button:Show()

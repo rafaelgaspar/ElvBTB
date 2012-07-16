@@ -11,6 +11,8 @@ function ElvBTBTotemBarCountdowns:createCountdown(bar)
   local r, g, b = unpack(ElvBTBTotem.TOTEM_COLORS[bar.totemType])
   
   local countdown = CreateFrame("StatusBar", format(bar:GetName().."Countdown"), bar)
+  countdown.bar = bar
+  
   countdown:SetWidth(bar.countdownWidth)
   countdown:SetHeight(bar.buttonSize-4)
   countdown:CreateBackdrop("Default")
@@ -30,7 +32,12 @@ function ElvBTBTotemBarCountdowns:createCountdown(bar)
   return countdown
 end
 
-function ElvBTBTotemBarCountdowns:updateCountdown(countdown, value)
+function ElvBTBTotemBarCountdowns:updateCountdown(countdown, value, optionsChanged)
+  if optionsChanged then
+    countdown:SetWidth(countdown.bar.countdownWidth)
+    countdown:SetHeight(countdown.bar.buttonSize-4)
+  end
+
   countdown:SetValue(value)
 end
 

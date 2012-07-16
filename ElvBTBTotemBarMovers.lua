@@ -9,9 +9,7 @@ local ElvBTBTotemBarMovers = {}
 function ElvBTBTotemBarMovers:createMover(bar)
   ElvBTBTotem = _G["ElvBTBTotem"]  
   
-  local mover = E:CreateMover(bar, format(bar:GetName().."Mover"), ElvBTBTotem.TOTEM_SCHOOL_NAMES[bar.totemType].." Totem Bar") 
-
-  return mover
+  E:CreateMover(bar, format(bar:GetName().."Mover"), ElvBTBTotem.TOTEM_SCHOOL_NAMES[bar.totemType].." Totem Bar") 
 end
 
 _G["ElvBTBTotemBarMovers"] = ElvBTBTotemBarMovers
