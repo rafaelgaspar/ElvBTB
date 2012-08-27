@@ -14,15 +14,21 @@ function ElvBTBTotemBarCountdowns:createCountdown(bar)
   countdown.bar = bar
   
   countdown:SetWidth(bar.countdownWidth)
-  countdown:SetHeight(bar.buttonSize-5)
   countdown:CreateBackdrop("Default")
   countdown:SetStatusBarTexture(E['media'].blankTex)
   countdown:GetStatusBarTexture():SetHorizTile(false)
   if bar.totemType % 2 == 1 then
     countdown:SetPoint("BOTTOMLEFT", 4, 4)
+	countdown:SetHeight(bar.buttonSize-4)
   else
     countdown:SetPoint("BOTTOMLEFT", 4, 5)
+	countdown:SetHeight(bar.buttonSize-5)
   end
+  
+  if bar.totemType == 4 then
+	countdown:SetWidth(bar.countdownWidth-0.5)
+  end
+  
   countdown:SetOrientation("Vertical")
   countdown:SetMinMaxValues(0, 1)
   countdown:SetValue(0)

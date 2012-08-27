@@ -56,8 +56,8 @@ function ElvBTBTotemOptions:createOptions()
       countdownwidth = {
         order = 6,
         type = 'range',
-        name = L['Countdown Width'],
-        desc = L['The width of the countdown bar.'],
+        name = "Countdown Width", -- TODO Localize
+        desc = "The width of the countdown bar.", -- TODO Localize
         min = 1, max = 15, step = 1
       }
     }

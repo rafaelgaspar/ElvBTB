@@ -20,7 +20,9 @@ function ElvBTBTotemBarButtons:createButton(bar, spellId, position)
   
   button:Size(bar.buttonSize)
   button:Point("BOTTOMLEFT", (position-1)*(bar.buttonSize+5)+2+bar.countdownWidth+8, 2)
-  button:DisableDragNDrop(true)
+  button:DisableDragNDrop(false)
+  button:SetScript("OnReceiveDrag", nil)
+
   
   button:SetTemplate("Default")
   button:StyleButton()
@@ -47,12 +49,12 @@ function ElvBTBTotemBarButtons:updateButton(button, spellId, position, optionsCh
     button:Point("BOTTOMLEFT", (position-1)*(button.bar.buttonSize+5)+2+button.bar.countdownWidth+8, 2)
   end
 
+  button:SetState(0, "empty", nil)
+  button:Hide()
+
   if spellId then
     button:SetState(0, "spell", spellId)
     button:Show()
-  else
-    button:SetState(0, "empty", nil)
-    button:Hide()
   end
 end
 
